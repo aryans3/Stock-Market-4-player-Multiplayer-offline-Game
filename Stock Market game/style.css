@@ -1,0 +1,286 @@
+#bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%; 
+  min-height: 100%;
+}
+  body {
+    font-family: Playfair Display, sans-serif;
+    overflow: hidden;
+  }
+  .home {
+    height: 100vh;
+    position: relative;
+  }
+  video {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .home-content {
+    width: 600px;
+    margin: 0 auto;
+    position: sticky;
+    top: 150px;
+    color: rgb(0, 195, 0);
+    z-index: 3;
+  }
+  .home-content h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 85px;
+    line-height: 1.1;
+  }
+  #card img{
+    display: inline-block;
+    margin-left: 25px;
+    transition-timing-function: ease-out;
+    transition-duration: 0.25s;
+    height: 200px;
+  }
+  #card img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    box-shadow: 5px 5px 40px white;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .home-content button {
+    display: block;
+    font-size: 20px;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(146, 146, 146, 0.082);
+    color: #fff;
+    margin: 50px auto 0;
+    padding: 20px 35px;
+  }
+
+  button{
+    transition-timing-function: ease-out;
+    transition-duration: 0.25s;
+  }
+
+  button:hover{
+    box-shadow: 5px 5px 40px white;
+    backdrop-filter: blur(5px);
+    background-color: rgba(220, 220, 220, 0.142);
+    transform: scale(1.3);
+    transition-duration: 0.2s;
+  }
+
+  .p1,.p2,.p3{
+    position: sticky;
+    z-index: 3;
+    border: 1px solid #f1f1f1;
+    backdrop-filter: blur(10px);
+    background-color: rgba(146, 146, 146, 0.082);
+    color: #fff;
+    height: 210px;
+    width: 475px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+  .p4 h1{
+    text-align: center;
+  }
+  .p4{
+    position: sticky;
+    z-index: 3;
+    border: 1px solid #f1f1f1;
+    backdrop-filter: blur(10px);
+    background-color: rgba(146, 146, 146, 0.082);
+    color: #fff;
+    height:460px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+  .p1:hover,.p2:hover,.p3:hover,.p4:hover{
+    box-shadow: 5px 5px 40px white;
+    transform: scale(1.015);
+    transition-duration: 0.2s;
+    backdrop-filter: blur(15px);
+    background-color: rgba(201, 201, 201, 0.158);
+  }
+  .container{
+    display: flex;
+  }
+  #sell{
+    width: 100px;
+    padding:16px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: x-large;
+    margin-right: 20px;
+
+  }
+  #buy{
+    width: 100px;
+    padding:16px; 
+    border-radius: 15px;
+    background-color: greenyellow;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: x-large;
+  }
+  #hold{
+    width: 100px;
+    padding:16px;
+    border-radius: 15px;
+    background-color: rgb(74, 173, 255);
+    color: white;
+    border: none;
+    margin-right: 20px;
+    font-size: x-large;
+  }
+  #buy:hover{
+    box-shadow: 5px 5px 40px greenyellow;
+    transform: scale(1.1);
+  }
+  #hold:hover{
+    box-shadow: 5px 5px 40px  rgb(74, 173, 255);
+    transform: scale(1.1);
+  }
+  #sell:hover{
+    box-shadow: 5px 5px 40px red;
+    transform: scale(1.1);
+  }
+  #table1,#table2{
+    text-align: center;
+  }
+  table img{
+    height: 15px;
+    width: 15px;
+  }
+  table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  #table1,#table2{
+    display: inline-block;
+  }
+  #c1,#c2{
+    display: inline-block;
+  }
+  #c1{
+    border: 2px solid white;
+    border-radius: 12px; 
+    margin-left: 20px;
+  }
+
+  #b1,#b2,#b3,#b4,#b5,#b6{
+    height: 60px;
+  }
+  h1{
+    font-size: medium;
+  }
+  #select{
+    margin-left: 30px;
+  }
+  #select img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.25s;
+  }
+  #p1,#p2{
+    display: inline-block;
+  }
+  #p1{
+    color: white;
+    margin-left: 50px;
+  }
+  #count{
+    color: white;
+    font-size: x-large;
+    background: none;
+    border: 2px solid white;
+    width:60px;
+    height: 40px;
+    margin-bottom:  5px;
+  }
+  #net1,#net2,#net3,#net4{
+    height: 15px;
+  }
+  #sec{
+    margin: 0px;
+    width:100%;
+    background-color: black;
+    z-index: 3;
+    position: sticky;
+    max-height:  50px;
+  }
+  #sec .scroll{
+    width: 100%;
+    display: flex;
+    font-size: 130%;
+    font-weight: 700;
+    white-space: nowrap;
+    animation: animate 40s linear infinite;
+  }
+  @keyframes animate{
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(-160%);
+    }
+  }
+  #sec img{
+    height: 20px;
+    width: 25px;
+  }
+  #player1,#player2,#player3,#player4{
+    font-size: large;
+  }
+  #next{
+    height: 40px;
+    width: 80px;
+    border: none;
+    margin-left: 180px;
+    box-shadow: none;
+    border-radius: 12px;
+  }
+  #next{
+    background-color: white;
+  }
+  
+  #con{
+    position: sticky;
+    z-index: 3;
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+  }
+
+  #con button{
+    margin-top: 50px;
+    padding:16px;
+    border-radius: 15px;
+    border: none;
+    font-size: x-large;
+  }
+  #con button:hover{
+    background-color: white;
+  }
+  
